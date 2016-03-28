@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 32aeea 919296 06189F -->
+    <item>
+        <shape>
+            <solid
+                android:color="#ffffff"/>
+            <padding
+                android:left="5dp"
+                android:top="5dp"
+                android:right="5dp"
+                android:bottom="5dp" />
+            <corners android:topLeftRadius="3dp"
+                android:topRightRadius="3dp"/>
+        </shape>
+    </item>
+</selector>

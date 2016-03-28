@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ListView android:id="@+id/listView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"/>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:background="#2d2d2d">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnInstall"
+        android:layout_weight="1"
+        android:layout_margin="1dp"
+        android:background="@drawable/button_style"
+        android:text="Установить"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCreateFile"
+        android:layout_weight="1"
+        android:layout_margin="1dp"
+        android:background="@drawable/button_style"
+        android:text="Создать файл"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUninstall"
+        android:layout_weight="1"
+        android:layout_margin="1dp"
+        android:background="@drawable/button_style"
+        android:text="Удалить файл"/>
+
+    </LinearLayout>
+
+</LinearLayout>
