@@ -81,7 +81,7 @@ public class MainActivity extends Activity {
                         intent.setDataAndType(Uri.fromFile(new File(pathFile)), "application/vnd.android.package-archive");
                         startActivity(intent);
                         //if(flag_install)
-                        Toast.makeText(getApplicationContext(),apkElm.getApk_name()+" установлен", Toast.LENGTH_LONG).show();
+                        //Toast.makeText(getApplicationContext(),apkElm.getApk_name()+" установлен", Toast.LENGTH_LONG).show();
                     }
                 }
             }
@@ -135,7 +135,7 @@ public class MainActivity extends Activity {
                             //.setContentTitle(res.getString(R.string.notifytitle)) // Заголовок уведомления
                     .setContentTitle("Агрегатор работает")
                             //.setContentText(res.getString(R.string.notifytext))
-                    .setContentText("Приложение №" + number); // Текст уведомления
+                    .setContentText("Происходит установка"); // Текст уведомления
 
             // Notification notification = builder.getNotification(); // до API 16
             Notification notification;
@@ -159,7 +159,7 @@ public class MainActivity extends Activity {
             Notification notification = new Notification(icon, tickerText, when);
 
             CharSequence contentTitle = "Агрегатор работает";
-            CharSequence contentText = "Приложение №" + number;
+            CharSequence contentText = "Происходит установка";
 
             final int HELLO_ID = 888;
 
@@ -172,22 +172,23 @@ public class MainActivity extends Activity {
 
         //Array list of countries
         ArrayList<ApkListElement> apkList = new ArrayList<ApkListElement>();
-        ApkListElement apkElement = new ApkListElement("OpenVPN+for+Android+0.6.43.apk",false);
+        ApkListElement apkElement = new ApkListElement("OpenVPN+for+Android+0.6.43.apk",true);
         apkList.add(apkElement);
-        apkElement = new ApkListElement("ownCloud+v1.9.0+build+10900000.apk",false);
+        apkElement = new ApkListElement("ownCloud+v1.9.0+build+10900000.apk",true);
         apkList.add(apkElement);
-        apkElement = new ApkListElement("Codec.Pack.CSip.Simple_v1.7.apk",false);
+        apkElement = new ApkListElement("Codec.Pack.CSip.Simple_v1.7.apk",true);
         apkList.add(apkElement);
-        apkElement = new ApkListElement("CSipSimple-r2456-trunk.apk",false);
+        apkElement = new ApkListElement("CSipSimple-r2456-trunk.apk",true);
         apkList.add(apkElement);
-        apkElement = new ApkListElement("CSipSimpleVideoPlugin.apk",false);
+        apkElement = new ApkListElement("CSipSimpleVideoPlugin.apk",true);
         apkList.add(apkElement);
-        apkElement = new ApkListElement("CSSG729-signed.apk",false);
+        apkElement = new ApkListElement("CSSG729-signed.apk",true);
         apkList.add(apkElement);
-        apkElement = new ApkListElement("info-guardianproject-otr-app-im-14.2.3.apk",false);
+        apkElement = new ApkListElement("org.thoughtcrime.redphone-30.apk",true);
         apkList.add(apkElement);
-        apkElement = new ApkListElement("FirstApp.apk",true);
+        apkElement = new ApkListElement("com-xabber-android-1.0.30.apk",true);
         apkList.add(apkElement);
+
 
         //create an ArrayAdaptar from the String Array
         dataAdapter = new CheckBoxAdapter(this,
